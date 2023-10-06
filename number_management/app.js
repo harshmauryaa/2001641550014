@@ -3,7 +3,7 @@ const url = require('url');
 const {promisify} = require('util');
 const dnsLookup = promisify(require('dns').lookup);
 
-const TIMEOUT = 500; // milliseconds
+const TIMEOUT = 500;
 
 async function fetchNumbers(targetUrl) {
     return new Promise((resolve, reject) => {
